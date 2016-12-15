@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: label8
+
+development:
+  <<: *default
+  database: memome_dev
+  port: 5432
+  host: localhost
+  password: 8YKrK-d2neqW
+
+test:
+  <<: *default
+  database: memome_test
+
+production:
+  <<: *default
+  database: memome_prod
+  port: 5432
+  host: localhost
+  password: <%= ENV['RAILS_BLOG_DATABASE_PASSWORD'] %>
