@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>memome</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
 
   <body>
@@ -40,5 +42,11 @@
     <main>
     <%= yield %>
     </main>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,11 +1,26 @@
 <div class="container">
   <div class="row">
-    <div id="main-container" class="col-md-8">
+    <div class="col-sm-9">
       <div class="article-list" style="background-color:#dfdfdf">
         <div class="cal">
           <p class="day">16</p>
           <p class="mon">dec</p>
         </div>
+        <pre><code class="ruby">
+          # The Greeter class
+          class Greeter
+            def initialize(name)
+              @name = name.capitalize
+            end
+
+            def salute
+              puts "Hello #{@name}!"
+            end
+          end
+
+          g = Greeter.new("world")
+          g.salute
+        </code></pre>
       </div>
 
       <div class="article-list" style="background-color:#dfdfdf">
@@ -22,6 +37,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4" style="background-color:#999999">right</div>
+
+    <div class="col-sm-3" style="background-color:#999999">right</div>
   </div>
 </div>
