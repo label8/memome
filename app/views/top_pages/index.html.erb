@@ -1,43 +1,65 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-9">
-      <div class="article-list" style="background-color:#dfdfdf">
-        <div class="cal">
-          <p class="day">16</p>
-          <p class="mon">dec</p>
+    <%# Contents column start %>
+    <div class="col-sm-9 contents-left">
+      <div class="article-list">
+        <div class="article-header">
+          <div class="cal">
+            <p class="day">16</p>
+            <p class="mon-year">Dec 2017</p>
+          </div>
+
+          <h2>This is article This is article</h2>
         </div>
-        <pre><code class="ruby">
-          # The Greeter class
-          class Greeter
-            def initialize(name)
-              @name = name.capitalize
-            end
+        <div class="artile-snippet">
+<pre><code class="ruby"># The Greeter class
+class Greeter
+  def initialize(name)
+    @name = name.capitalize
+  end
 
-            def salute
-              puts "Hello #{@name}!"
-            end
-          end
-
-          g = Greeter.new("world")
-          g.salute
-        </code></pre>
-      </div>
-
-      <div class="article-list" style="background-color:#dfdfdf">
-        <div class="cal">
-          <p class="day">16</p>
-          <p class="mon">dec</p>
+  def salute
+    puts "Hello #{@name}!"
+  end
+end
+g = Greeter.new("world")
+g.salute</code></pre>
         </div>
       </div>
 
-      <div class="article-list" style="background-color:#dfdfdf">
-        <div class="cal">
-          <p class="day">16</p>
-          <p class="mon">dec</p>
+      <div class="article-list">
+        <div class="article-header">
+          <div class="cal">
+            <p class="day">09</p>
+            <p class="mon-year">Oct 2017</p>
+          </div>
+
+          <h2>This is article This is article</h2>
+        </div>
+        <div class="artile-snippet">
+          <p>これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。</p>
+          <p>これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。</p>
+<pre><code class="ruby">aaaaa</code></pre>
+        </div>
+      </div>
+
+      <div class="article-list">
+        <div class="article-header">
+          <div class="cal">
+            <p class="day">22</p>
+            <p class="mon-year">Jun 2017</p>
+          </div>
+
+          <h2>This is article This is article</h2>
+        </div>
+        <div class="artile-snippet">
+          <p>これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。</p>
+          <p>これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。これはテストです。</p>
         </div>
       </div>
     </div>
+    <%# Contents column end %>
 
-    <div class="col-sm-3" style="background-color:#999999">right</div>
+    <%= render :partial => "layouts/side_menu" %>
   </div>
 </div>

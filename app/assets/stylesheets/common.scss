@@ -1,11 +1,21 @@
 html {
+    font-size: 62.5%;
     position: relative;
     min-height: 100%;
 }
 body {
     /* Margin bottom by footer height */
-    /*margin-bottom: 60px;*/
+    font-size: 1.4em;
     padding-bottom: 60px;
+}
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
 footer {
     position: absolute;
@@ -21,8 +31,22 @@ footer {
         .text-muted {
             margin: 20px 0;
         }
+        .copyright {
+            text-align: center;
+        }
      }
 }
 header .container {
     margin-top: 8%;
+}
+
+/*** Side menu ***/
+.side-menu {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-color: #dfdfdf;
+    ul {
+        margin: 0;
+    }
 }
