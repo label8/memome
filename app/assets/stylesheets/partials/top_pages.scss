@@ -2,7 +2,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 0px 16px 0px 16px;
-    background-color: #dfdfdf;
+    background-color: #ebebeb;
 }
 .cal {
     background-color: #8BC34A;
@@ -26,18 +26,33 @@
 }
 .article-header {
     overflow: hidden;
+    border-bottom: 1px solid #C5C5C5;
+    padding-bottom: 10px;
     h2 {
-        font-size: 2.8rem;
-        /*min-height: 5.6rem;*/
+        font-size: 2.6rem;
         line-height: 3rem;
         margin: 0 0 0 90px;
+        a {
+            text-decoration: none;
+        }
     }
 }
 .artile-snippet {
     padding-top: 20px;
+    padding-bottom: 10px;
     p {
         font-size: 1.6rem;
         margin-right: 20px;
         margin-left: 20px;
+    }
+}
+.article-info {
+    border-top: 1px solid #C5C5C5;
+    padding-top: 10px;
+    p {
+        font-size: 1.2rem;
+        text-align: right;
+        margin-bottom: 0;
+        margin-right: 10px;
     }
 }

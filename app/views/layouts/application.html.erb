@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">memome</a>
+          <%= link_to 'memome', "/", class: "navbar-brand" %>
         </div>
         <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -42,6 +42,8 @@
     <main>
     <%= yield %>
     </main>
+
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
 
     <footer>
       <div class="container">

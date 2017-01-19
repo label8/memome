@@ -40,12 +40,34 @@ header .container {
     margin-top: 8%;
 }
 
+/* Page top button settings */
+#page-top {
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    font-size: 80%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
 /*** Side menu ***/
 .side-menu {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 16px;
-    background-color: #dfdfdf;
+    background-color: #ebebeb;
     ul {
         margin: 0;
     }
