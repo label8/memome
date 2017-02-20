@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <%# Contents column start %>
+    <div class="col-sm-9 contents-left">
+      <div class="article-box">
+        <div class="article-header">
+          <div class="cal">
+            <p class="day"><%= show_day @article.updated_at %></p>
+            <p class="mon-year"><%= show_month @article.updated_at %>&nbsp;<%= show_year @article.updated_at %></p>
+          </div>
+
+          <h2><%= @article.title %></h2>
+        </div>
+        <div class="artile-snippet">
+          <%= @article.content.html_safe %>
+          <div class="article-info"><p>Author&nbsp;:&nbsp;eighty8&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;:&nbsp;<%= show_date @article.updated_at %></p></div>
+        </div>
+      </div>
+    <%# Contents column end %>
+    </div>
+
+    <%= render :partial => "public/layouts/side_menu", locals: {list_categories: @categories} %>
+  </div>
+</div>

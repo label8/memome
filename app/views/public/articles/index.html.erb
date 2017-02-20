@@ -9,7 +9,7 @@
             <p class="day"><%= show_day article.updated_at %></p>
             <p class="mon-year"><%= show_month article.updated_at %>&nbsp;<%= show_year article.updated_at %></p>
           </div>
-          <h2><%= link_to article.title, article_path(article.id) %></h2>
+          <h2><%= link_to article.title, public_article_path(article.id) %></h2>
           <!--<h2><%= article.title %></h2>-->
         </div>
         <div class="artile-snippet">
@@ -84,6 +84,6 @@ g.salute</code></pre>
     </div>
     <%# Contents column end %>
 
-    <%= render :partial => "layouts/side_menu", locals: {side_categories: @categories} %>
+    <%= render :partial => "public/layouts/side_menu", locals: {list_categories: @categories} %>
   </div>
 </div>
