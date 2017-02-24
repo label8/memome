@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>memome</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'admin/application', media: 'all' %>
+    <%= javascript_include_tag 'admin/application' %>
+  </head>
+
+  <body>
+    <nav>
+      <h1><%= link_to 'memome', :admin_root %></h1>
+    </nav>
+
+    <main>
+    <%= yield %>
+    </main>
+
+    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted copyright">Place sticky footer content here.</p>
+      </div>
+    </footer>
+  </body>
+</html>

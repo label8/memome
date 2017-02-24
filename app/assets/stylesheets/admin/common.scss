@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    font-size: 1.4em;
+    padding-bottom: 60px;
+}
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #222222;
+    min-height: 50px;
+    width: 100%;
+    h1 {
+        color: #9d9d9d;
+        font-size: 18px;
+        margin: 0;
+        padding: 15px 15px;
+        a {
+            color: #9d9d9d;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #222222;
+    .container {
+        width: auto;
+        max-width: 680px;
+        padding: 0 15px;
+        .text-muted {
+            margin: 20px 0;
+        }
+        .copyright {
+            text-align: center;
+        }
+     }
+}
+header .container {
+    margin-top: 8%;
+}
+
+/* Page top button settings */
+#page-top {
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    font-size: 80%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #999;
+}

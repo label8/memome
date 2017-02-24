@@ -1,4 +1,5 @@
 class Public::ArticlesController < Public::ApplicationController
+
   def index
     @articles = Article.article_all
   end
@@ -11,4 +12,5 @@ class Public::ArticlesController < Public::ApplicationController
   def show
     @article = Article.find(params[:id])
   end
+
 end
